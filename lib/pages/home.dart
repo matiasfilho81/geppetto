@@ -10,11 +10,10 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-static const vermenho = Colors.redAccent;
-static const azul = Colors.blueAccent;
-static const amarelo = Colors.yellowAccent;
-static const verde = Colors.greenAccent;
+  static const vermenho = Colors.redAccent;
+  static const azul = Colors.blueAccent;
+  static const amarelo = Colors.yellowAccent;
+  static const verde = Colors.greenAccent;
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +38,6 @@ static const verde = Colors.greenAccent;
 
   Row linha(Color a, Color b, Color c) {
     return Row(
-
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
         bloco(100, 100, a),
@@ -53,9 +51,9 @@ static const verde = Colors.greenAccent;
     return Container(
       color: Colors.black,
       child: Container(
-        margin:  const  EdgeInsets.all(6.0),
-        width: w,
-        height: h,
+        margin: const EdgeInsets.all(6.0),
+        width: w.wsp,
+        height: h.hsp,
         color: cor,
         child: const Center(child: Text("OI")),
       ),
